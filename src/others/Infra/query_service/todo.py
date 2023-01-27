@@ -1,5 +1,5 @@
-from ...domain.todo import Todo, TodoId
-from ...others.query_service.todo import TodoRepository
+from ....domain.todo import Todo, TodoId
+from ...Infra.query_service.todo import TodoRepository
 
 class TodoQueryService:
     """todo の参照系の処理を抽象化する"""

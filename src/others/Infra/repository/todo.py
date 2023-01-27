@@ -1,4 +1,4 @@
-from ...domain.todo import Todo, TodoId, TodoTitle, TodoDescription, TodoStatus
+from ....domain.todo import Todo, TodoId, TodoTitle, TodoDescription, TodoStatus
 
 class TodoRepository:
     """todo 更新系の処理を抽象化する"""

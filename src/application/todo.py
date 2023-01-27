@@ -1,7 +1,7 @@
 from ..domain.todo import Todo, TodoId, TodoTitle, TodoDescription, TodoStatus
 from ..others.factory.todo import TodoFactory
-from ..others.repository.todo import TodoRepository
-from ..others.query_service.todo import TodoQueryService
+from ..others.Infra.repository.todo import TodoRepository
+from ..others.Infra.query_service.todo import TodoQueryService
 
 class TodoApplication:
     def __init__(self, fact: TodoFactory ,repo: TodoRepository, qs: TodoQueryService):
@@ -61,8 +61,7 @@ class TodoApplication:
 if __name__ == '__main__':
     app = TodoApplication(TodoFactory, TodoRepository, TodoQueryService)
     init_input1 = {
-        'title': "タイトル1", 
+        'title': "タイトル1",
         'description': "詳細1"
         }
     app.create_todo(init_input1)
-    
